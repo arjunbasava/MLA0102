@@ -1,0 +1,22 @@
+START
+
+Create a graph
+Create an empty queue
+Create an empty visited set
+
+Enqueue the starting node
+Mark the starting node as visited
+
+WHILE queue is not empty DO
+    Dequeue a node
+    Print the node
+
+    FOR each adjacent node DO
+        IF adjacent node is not visited THEN
+            Mark it as visited
+            Enqueue it
+        END IF
+    END FOR
+END WHILE
+
+STOP
