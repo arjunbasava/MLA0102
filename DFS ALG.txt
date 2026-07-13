@@ -1,0 +1,19 @@
+START
+
+Create a graph
+Create an empty visited set
+
+FUNCTION DFS(node)
+    IF node is not visited THEN
+        Mark node as visited
+        Print node
+
+        FOR each adjacent node DO
+            DFS(adjacent node)
+        END FOR
+    END IF
+END FUNCTION
+
+Call DFS(starting node)
+
+STOP
