@@ -1,0 +1,30 @@
+START
+
+Create a graph with nodes and edge costs
+
+Create a priority queue
+Insert (0, Start_Node) into the priority queue
+
+Create an empty visited set
+
+WHILE priority queue is not empty DO
+
+    Remove the node with the minimum cost
+
+    IF node is Destination THEN
+        Print the minimum cost
+        STOP
+    END IF
+
+    IF node is not visited THEN
+        Mark node as visited
+
+        FOR each neighboring node DO
+            New_Cost = Current_Cost + Edge_Cost
+            Insert (New_Cost, Neighbor) into the priority queue
+        END FOR
+    END IF
+
+END WHILE
+
+STOP

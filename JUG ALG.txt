@@ -1,0 +1,19 @@
+START
+
+Initialize Jug1 = 0 and Jug2 = 0
+
+WHILE Goal is not reached DO
+
+    IF Jug2 is empty THEN
+        Fill Jug2
+    ELSE IF Jug1 is full THEN
+        Empty Jug1
+    ELSE
+        Pour water from Jug2 to Jug1
+    END IF
+
+END WHILE
+
+Print the sequence of operations
+
+STOP
