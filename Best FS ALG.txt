@@ -1,0 +1,30 @@
+START
+
+Create a graph and heuristic values
+
+Create an empty priority queue
+Insert the start node into the priority queue
+
+Create an empty visited set
+
+WHILE priority queue is not empty DO
+
+    Remove the node with the smallest heuristic value
+
+    Print the node
+
+    IF node is the Goal THEN
+        STOP
+    END IF
+
+    Mark the node as visited
+
+    FOR each adjacent node DO
+        IF adjacent node is not visited THEN
+            Insert adjacent node into the priority queue
+        END IF
+    END FOR
+
+END WHILE
+
+STOP
