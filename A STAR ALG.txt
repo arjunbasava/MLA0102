@@ -1,0 +1,20 @@
+AStar(Graph, Start, Goal)
+
+Create Priority Queue PQ
+Insert(Start, 0)
+
+While PQ is not empty do
+    (f, g, Node) ← Remove node with minimum f
+
+    If Node = Goal then
+        Print "Goal Found"
+        Print g
+        Stop
+    End If
+
+    For each (Neighbor, Cost) of Node do
+        NewCost = g + Cost
+        f = NewCost + Heuristic(Neighbor)
+        Insert(Neighbor, f)
+    End For
+End While
