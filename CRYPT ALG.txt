@@ -1,0 +1,15 @@
+START
+
+Assign digits to letters
+
+Check whether all letters have unique digits
+
+Verify the arithmetic equation
+
+IF equation is satisfied THEN
+    Print the assigned digits
+ELSE
+    Print "No Solution"
+END IF
+
+STOP
