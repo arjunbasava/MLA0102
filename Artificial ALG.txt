@@ -1,0 +1,23 @@
+START
+
+Import required libraries
+
+Create input data (training dataset)
+
+Create output labels
+
+Initialize the Neural Network model
+
+Add input layer
+
+Add hidden layer
+
+Add output layer
+
+Train the model using training data
+
+Test the model with new patient data
+
+Display the prediction
+
+STOP
