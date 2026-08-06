@@ -1,0 +1,11 @@
+BEGIN
+FUNCTION factorial(n)
+    IF n == 0 OR n == 1
+        RETURN 1
+    ELSE
+        RETURN n * factorial(n-1)
+END FUNCTION
+
+READ n
+PRINT factorial(n)
+END
