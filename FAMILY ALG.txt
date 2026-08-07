@@ -1,0 +1,21 @@
+START
+
+Define facts about family members
+
+Define rules:
+    IF X is parent of Y
+        THEN X is father/mother of Y
+
+    IF X is parent of Y AND Y is parent of Z
+        THEN X is grandparent of Z
+
+    IF X is parent of Y AND X is parent of Z
+        THEN Y and Z are siblings
+
+Ask for a relationship
+
+Apply the logical rules to the facts
+
+Display the inferred relationship
+
+STOP
