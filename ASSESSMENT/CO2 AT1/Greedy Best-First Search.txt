@@ -1,0 +1,26 @@
+Algorithm: Greedy Best-First Search
+
+Input:
+    Start node S
+    Goal node G
+    Heuristic function h(n)
+
+Output:
+    Path from S to G
+
+Steps:
+1. Create an OPEN priority queue.
+2. Insert the Start node into OPEN.
+3. Create an empty CLOSED list.
+4. Repeat until OPEN is empty:
+      a. Select the node n from OPEN having the smallest h(n).
+      b. Remove n from OPEN.
+      c. If n is the Goal node:
+             Return the path from Start to Goal.
+      d. Add n to CLOSED.
+      e. Generate all successors of n.
+      f. For each successor:
+             If the successor is not in CLOSED:
+                  Calculate h(successor).
+                  Insert the successor into OPEN.
+5. If OPEN becomes empty, return FAILURE.

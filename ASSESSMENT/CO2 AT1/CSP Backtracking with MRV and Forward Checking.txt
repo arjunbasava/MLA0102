@@ -1,0 +1,38 @@
+Algorithm: CSP Backtracking with MRV and Forward Checking
+
+Input:
+    Variables
+    Domains
+    Constraints
+
+Output:
+    Valid assignment for all variables
+
+Steps:
+1. If all variables are assigned:
+       Return the complete assignment.
+
+2. Select an unassigned variable using MRV.
+       Choose the variable with the smallest
+       remaining legal domain.
+
+3. For each possible value in the selected variable's domain:
+
+      a. Check whether the value satisfies all constraints.
+
+      b. If the value is consistent:
+             Assign the value to the variable.
+
+      c. Apply Forward Checking:
+             Remove the selected value from the domains
+             of all neighboring unassigned variables.
+
+      d. If no neighbor has an empty domain:
+             Recursively continue the search.
+
+      e. If the assignment fails:
+             Undo the assignment.
+             Restore the removed domain values.
+
+4. If no value produces a solution:
+       Return FAILURE.

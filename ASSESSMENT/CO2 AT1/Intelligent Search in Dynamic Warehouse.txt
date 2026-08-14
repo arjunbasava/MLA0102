@@ -1,0 +1,21 @@
+ONLINE-SEARCH(source, goal)
+
+current ← source
+
+while current ≠ goal do
+
+    Observe the environment
+
+    if new obstacle is detected then
+        Update the map
+        Recalculate the path
+    end if
+
+    Select the best available next move
+    Move to the next position
+
+    current ← new position
+
+end while
+
+return "Goal Reached"

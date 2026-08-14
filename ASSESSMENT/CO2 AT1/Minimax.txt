@@ -1,0 +1,35 @@
+Algorithm: Minimax
+
+Input:
+    Game tree
+    Current node
+    Player type: MAX or MIN
+
+Output:
+    Best value for MAX player
+
+Steps:
+
+1. If the current node is a terminal node:
+       Return its utility value.
+
+2. If the current player is MAX:
+       Set bestValue = -∞.
+
+       For each child of the current node:
+           value = Minimax(child, MIN)
+           bestValue = maximum(bestValue, value)
+
+       Return bestValue.
+
+3. If the current player is MIN:
+       Set bestValue = +∞.
+
+       For each child of the current node:
+           value = Minimax(child, MAX)
+           bestValue = minimum(bestValue, value)
+
+       Return bestValue.
+
+4. MAX selects the move having the highest value.
+5. MIN selects the move having the lowest value.

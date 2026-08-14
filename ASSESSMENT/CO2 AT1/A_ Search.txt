@@ -1,0 +1,40 @@
+Algorithm: A* Search
+
+Input:
+    Start node S
+    Goal node G
+    Heuristic function h(n)
+
+Output:
+    Optimal path from S to G
+
+Steps:
+1. Create an OPEN priority queue.
+2. Insert Start node into OPEN.
+3. Set g(S) = 0.
+4. Calculate:
+       f(S) = g(S) + h(S)
+5. Create an empty CLOSED list.
+6. Repeat until OPEN is empty:
+      a. Select the node n having the smallest f(n).
+      b. Remove n from OPEN.
+      c. If n is the Goal node:
+             Return the optimal path.
+      d. Add n to CLOSED.
+      e. Generate all successors of n.
+      f. For each successor:
+             Calculate the new cost:
+                 g(new) = g(n) + cost(n, new)
+             Calculate:
+                 f(new) = g(new) + h(new)
+             If the successor is not in OPEN or has a lower
+             g value:
+                 Update its cost and parent.
+                 Insert/update it in OPEN.
+7. If OPEN becomes empty, return FAILURE.
+
+A* Formula
+f(n) = g(n) + h(n)
+g(n) = Actual cost from Start to n
+h(n) = Estimated cost from n to Goal
+f(n) = Estimated total cost of the path
