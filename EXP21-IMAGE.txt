@@ -1,0 +1,25 @@
+BEGIN
+
+1. Import image processing and K-Means libraries.
+
+2. Create two sample images:
+      a. Create a circle image.
+      b. Create a square image.
+
+3. Display both images.
+
+4. Convert each image into a numerical feature vector.
+
+5. Store the feature vectors in a dataset.
+
+6. Set the number of clusters K = 2.
+
+7. Apply K-Means clustering to the feature dataset.
+
+8. Assign each image to its nearest cluster.
+
+9. Display the cluster number of each image.
+
+10. Print the pattern recognition results.
+
+END
